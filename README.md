@@ -1,5 +1,7 @@
 # 👋 Olá! Eu sou / I'm Jackson J. Miranda
 
+Bem‑vindo ao meu perfil GitHub! Esta página apresenta uma versão em **português** e uma tradução em **inglês** para alcançar tanto a comunidade brasileira quanto os visitantes internacionais. As seções abaixo são organizadas em pares: primeiro em português e logo em seguida em inglês.
+
 ## Sobre mim / About Me
 
 **Português:**
@@ -15,16 +17,6 @@ I’m a **Java Developer** and **software engineer in training**, currently purs
 **Português:**
 
 Aqui estão algumas das principais tecnologias e ferramentas que utilizo:
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-Outras: HTML, CSS, JavaScript, Bootstrap, C#, Lombok, Spring Security, Spring Data JPA.
 
 **English:**
 
@@ -44,10 +36,9 @@ Other tools: HTML, CSS, JavaScript, Bootstrap, C#, Lombok, Spring Security, Spr
 
 ### InterfaceamentoWeb (Privado / Private)
 
-[InterfaceamentoWeb](https://github.com/JacksonMiranda/InterfaceamentoWeb)  
-**Português:** Aplicação web full stack com **Angular** no front‑end e **Spring Boot**/**MySQL** no back‑end, focada em integrar sistemas de saúde e possibilitar interoperabilidade entre plataformas. Devido à natureza sensível do projeto, o código permanece privado.
+**Português:** Projeto web full stack com **Angular** no front‑end e **Spring Boot**/**MySQL** no back‑end, focado em integrar sistemas de saúde e possibilitar interoperabilidade entre plataformas. Devido à natureza sensível deste projeto, o repositório é privado e não está acessível publicamente.
 
-**English:** Full‑stack web application using **Angular** on the front end and **Spring Boot**/**MySQL** on the back end. It focuses on integrating healthcare systems and enabling interoperability between platforms. The code is private due to the project’s sensitive nature.
+**English:** A full‑stack web project using **Angular** on the front end and **Spring Boot**/**MySQL** on the back end. It focuses on integrating healthcare systems and enabling interoperability between platforms. Because of the sensitive nature of this project, the repository is private and not publicly accessible.
 
 ## 📊 Estatísticas do GitHub / GitHub Stats
 
@@ -58,9 +49,6 @@ Other tools: HTML, CSS, JavaScript, Bootstrap, C#, Lombok, Spring Security, Spr
 **Português:**
 
 Para entrar em contato comigo, utilize os links abaixo:
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/jacksonmiranda/)
-✉️ **Email:** [jackson.j.m@hotmail.com](mailto:jackson.j.m@hotmail.com)
 
 **English:**
 
