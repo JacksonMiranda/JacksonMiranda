@@ -1,7 +1,5 @@
 # 👋 Olá! Eu sou / I'm Jackson J. Miranda
 
-Bem‑vindo ao meu perfil GitHub! Esta página apresenta uma versão em **português** e uma tradução em **inglês** para alcançar tanto a comunidade brasileira quanto os visitantes internacionais. As seções abaixo são organizadas em pares: primeiro em português e logo em seguida em inglês.
-
 ## Sobre mim / About Me
 
 **Português:**
