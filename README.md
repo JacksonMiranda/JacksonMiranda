@@ -4,11 +4,11 @@
 
 **Português:**
 
-Sou **Desenvolvedor Java** com formação em Sistemas de Informação e especialista em integrações para saúde. Atuo principalmente no desenvolvimento back‑end utilizando Java e Spring Boot, e em aplicações web full stack que combinam **Angular** no front‑end e **MySQL** no back‑end:contentReference[oaicite:0]{index=0}:contentReference[oaicite:1]{index=1}. Também possuo experiência em projetos com **C#**, **JavaScript** e tecnologias de interface (HTML, CSS, Bootstrap). Tenho paixão por criar soluções que resolvam problemas reais e impactem positivamente a vida das pessoas.
+Sou **Desenvolvedor Java** e **engenheiro de software em formação**, atualmente cursando Engenharia de Software pela **PUC Minas** (Pontifícia Universidade Católica de Minas Gerais). Além da minha formação em Sistemas de Informação, sou especialista em integrações para saúde. Atuo principalmente no desenvolvimento back‑end utilizando Java e Spring Boot, e em aplicações web full stack que combinam **Angular** no front‑end e **MySQL** no back‑end:contentReference[oaicite:0]{index=0}:contentReference[oaicite:1]{index=1}. Também possuo experiência em projetos com **C#**, **JavaScript** e tecnologias de interface (HTML, CSS, Bootstrap). Tenho paixão por criar soluções que resolvam problemas reais e impactem positivamente a vida das pessoas.
 
 **English:**
 
-I’m a **Java Developer** with a degree in Information Systems and a specialist in healthcare integrations. My work focuses on back‑end development with Java and Spring Boot, as well as full‑stack web applications using **Angular** on the front end and **MySQL** on the back end:contentReference[oaicite:2]{index=2}:contentReference[oaicite:3]{index=3}. I also build solutions with **C#**, **JavaScript** and front‑end technologies (HTML, CSS, Bootstrap). I’m passionate about creating software that solves real problems and makes a positive impact.
+I’m a **Java Developer** and **software engineer in training**, currently pursuing a degree in Software Engineering at **PUC Minas** (Catholic University of Minas Gerais). In addition to my degree in Information Systems, I specialize in healthcare integrations. My work focuses on back‑end development with Java and Spring Boot, as well as full‑stack web applications using **Angular** on the front end and **MySQL** on the back end:contentReference[oaicite:2]{index=2}:contentReference[oaicite:3]{index=3}. I also build solutions with **C#**, **JavaScript** and front‑end technologies (HTML, CSS, Bootstrap). I’m passionate about creating software that solves real problems and makes a positive impact.
 
 ## 🛠️ Tecnologias / Technologies
 
