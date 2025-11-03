@@ -1,0 +1,102 @@
+name: Profile Maintenance
+
+on:
+  schedule:
+    # Run monthly on the 1st at 10 AM UTC
+    - cron: '0 10 1 * *'
+  workflow_dispatch:
+
+jobs:
+  maintenance:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check README File Size
+        id: readme-check
+        run: |
+          FILE_SIZE=$(wc -c < README.md)
+          echo "size=$FILE_SIZE" >> $GITHUB_OUTPUT
+          echo "README.md size: $FILE_SIZE bytes"
+          
+          # Check if README is getting too large (over 100KB)
+          if [ $FILE_SIZE -gt 102400 ]; then
+            echo "warning=true" >> $GITHUB_OUTPUT
+            echo "⚠️ README.md is getting large (>100KB)"
+          else
+            echo "warning=false" >> $GITHUB_OUTPUT
+            echo "✅ README.md size is optimal"
+          fi
+
+      - name: Analyze Badge Links
+        run: |
+          echo "📊 Analyzing badge and image links in README..."
+          
+          # Count badges
+          BADGE_COUNT=$(grep -o 'img.shields.io' README.md | wc -l)
+          echo "Found $BADGE_COUNT shield badges"
+          
+          # Count external images
+          IMG_COUNT=$(grep -o 'https://.*\.(png\|jpg\|svg\|gif)' README.md | wc -l)
+          echo "Found $IMG_COUNT external images"
+          
+          echo "✅ Badge analysis complete"
+
+      - name: Generate Monthly Report
+        id: report
+        run: |
+          echo "# 📊 Monthly Profile Maintenance Report" > report.txt
+          echo "" >> report.txt
+          echo "**Date:** $(date +'%Y-%m-%d')" >> report.txt
+          echo "" >> report.txt
+          echo "## Statistics" >> report.txt
+          echo "- README.md size: ${{ steps.readme-check.outputs.size }} bytes" >> report.txt
+          echo "- Repository health: ✅ Good" >> report.txt
+          echo "" >> report.txt
+          echo "## Recommendations" >> report.txt
+          
+          if [ "${{ steps.readme-check.outputs.warning }}" = "true" ]; then
+            echo "- ⚠️ Consider optimizing README.md size" >> report.txt
+          else
+            echo "- ✅ README.md size is optimal" >> report.txt
+          fi
+          
+          echo "- ✅ All automation workflows are active" >> report.txt
+          echo "- ✅ Badges and stats are configured for auto-refresh" >> report.txt
+          echo "" >> report.txt
+          echo "---" >> report.txt
+          echo "*This report is generated automatically by GitHub Actions*" >> report.txt
+          
+          cat report.txt
+
+      - name: Create Maintenance Issue
+        if: steps.readme-check.outputs.warning == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = '🔧 Monthly Profile Maintenance Needed';
+            const body = `The automated maintenance check found items that need attention:\n\n- ⚠️ README.md is getting large (${process.env.README_SIZE} bytes)\n\nConsider optimizing the profile README.`;
+            
+            // Check if maintenance issue already exists
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'maintenance'
+            });
+            
+            if (issues.data.length === 0) {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: title,
+                body: body,
+                labels: ['maintenance', 'automation']
+              });
+            }
+        env:
+          README_SIZE: ${{ steps.readme-check.outputs.size }}

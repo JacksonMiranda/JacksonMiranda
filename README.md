@@ -2,6 +2,11 @@
 
 ### Especialista em Integrações para Saúde | Healthcare Integration Specialist
 
+![Profile Views](https://komarev.com/ghpvc/?username=JacksonMiranda&color=blueviolet&style=flat-square&label=Profile+Views)
+[![Link Check](https://github.com/JacksonMiranda/JacksonMiranda/actions/workflows/link-checker.yml/badge.svg)](https://github.com/JacksonMiranda/JacksonMiranda/actions/workflows/link-checker.yml)
+[![Update Stats](https://github.com/JacksonMiranda/JacksonMiranda/actions/workflows/update-stats.yml/badge.svg)](https://github.com/JacksonMiranda/JacksonMiranda/actions/workflows/update-stats.yml)
+[![Maintenance](https://github.com/JacksonMiranda/JacksonMiranda/actions/workflows/profile-maintenance.yml/badge.svg)](https://github.com/JacksonMiranda/JacksonMiranda/actions/workflows/profile-maintenance.yml)
+
 Bem‑vindo ao meu perfil! Esta página é bilingue (PT/EN) e foi organizada para ser objetiva, profissional e interativa.
 
 - PT: Leia "Sobre mim" em português, veja minha stack atual e projetos.
@@ -215,6 +220,22 @@ Project demonstrating technical versatility with focus on automation and modern 
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=JacksonMiranda&theme=radical">
   <img alt="GitHub Streak" src="https://github-readme-streak-stats.herokuapp.com/?user=JacksonMiranda&theme=default">
 </picture>
+
+</div>
+
+### 📈 Atividade Recente / Recent Activity
+
+<div align="center">
+
+[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=JacksonMiranda&theme=react-dark&hide_border=true&area=true)](https://github.com/JacksonMiranda)
+
+</div>
+
+### 🏆 Conquistas / GitHub Trophies
+
+<div align="center">
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=JacksonMiranda&theme=radical&no-frame=false&no-bg=false&margin-w=4&column=4)](https://github.com/JacksonMiranda)
 
 </div>
 

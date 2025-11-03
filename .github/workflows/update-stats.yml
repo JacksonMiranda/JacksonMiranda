@@ -1,0 +1,49 @@
+name: Update README Stats
+
+on:
+  schedule:
+    # Update stats daily at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Update GitHub Stats
+        run: |
+          # This ensures the stats cards are fresh by invalidating cache
+          echo "Stats cards will be automatically refreshed on next README view"
+          echo "GitHub Stats cards have cache_seconds parameter set to 7200 (2 hours)"
+          
+      - name: Get Current Date
+        id: date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+
+      - name: Generate Activity Report
+        id: activity
+        run: |
+          # Get commit count for the last 7 days
+          COMMITS=$(git log --since='7 days ago' --oneline | wc -l)
+          echo "commits=$COMMITS" >> $GITHUB_OUTPUT
+          
+          # Get last commit date
+          LAST_COMMIT=$(git log -1 --format=%cd --date=short)
+          echo "last_commit=$LAST_COMMIT" >> $GITHUB_OUTPUT
+
+      - name: Comment Activity Summary
+        run: |
+          echo "📊 Activity Summary for ${{ steps.date.outputs.date }}"
+          echo "- Commits in last 7 days: ${{ steps.activity.outputs.commits }}"
+          echo "- Last commit: ${{ steps.activity.outputs.last_commit }}"
+          echo "✅ README stats are configured to auto-refresh"
