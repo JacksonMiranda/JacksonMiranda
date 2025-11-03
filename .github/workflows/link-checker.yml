@@ -31,7 +31,7 @@ jobs:
         with:
           script: |
             const title = '🔗 Broken Links Detected in README';
-            const body = 'The automated link checker found broken links in the README. Please review and fix them.\n\nCheck the [workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details.';
+            const body = `The automated link checker found broken links in the README. Please review and fix them.\n\nCheck the [workflow run](${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}) for details.`;
 
             // Check if issue already exists
             const issues = await github.rest.issues.listForRepo({
@@ -50,3 +50,7 @@ jobs:
                 labels: ['broken-links', 'automation']
               });
             }
+        env:
+          GITHUB_SERVER_URL: ${{ github.server_url }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_RUN_ID: ${{ github.run_id }}

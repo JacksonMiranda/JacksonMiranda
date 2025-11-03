@@ -79,7 +79,8 @@ jobs:
         with:
           script: |
             const title = '🔧 Monthly Profile Maintenance Needed';
-            const body = `The automated maintenance check found items that need attention:\n\n- ⚠️ README.md is getting large (${process.env.README_SIZE} bytes)\n\nConsider optimizing the profile README.`;
+            const readmeSize = process.env.README_SIZE;
+            const body = `The automated maintenance check found items that need attention:\n\n- ⚠️ README.md is getting large (${readmeSize} bytes)\n\nConsider optimizing the profile README.`;
 
             // Check if maintenance issue already exists
             const issues = await github.rest.issues.listForRepo({
