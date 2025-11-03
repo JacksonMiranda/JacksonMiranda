@@ -32,7 +32,7 @@ jobs:
           script: |
             const title = '🔗 Broken Links Detected in README';
             const body = 'The automated link checker found broken links in the README. Please review and fix them.\n\nCheck the [workflow run](${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}) for details.';
-            
+
             // Check if issue already exists
             const issues = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
@@ -40,7 +40,7 @@ jobs:
               state: 'open',
               labels: 'broken-links'
             });
-            
+
             if (issues.data.length === 0) {
               await github.rest.issues.create({
                 owner: context.repo.owner,

@@ -25,7 +25,7 @@ jobs:
           # This ensures the stats cards are fresh by invalidating cache
           echo "Stats cards will be automatically refreshed on next README view"
           echo "GitHub Stats cards have cache_seconds parameter set to 7200 (2 hours)"
-          
+
       - name: Get Current Date
         id: date
         run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
@@ -36,7 +36,7 @@ jobs:
           # Get commit count for the last 7 days
           COMMITS=$(git log --since='7 days ago' --oneline | wc -l)
           echo "commits=$COMMITS" >> $GITHUB_OUTPUT
-          
+
           # Get last commit date
           LAST_COMMIT=$(git log -1 --format=%cd --date=short)
           echo "last_commit=$LAST_COMMIT" >> $GITHUB_OUTPUT
