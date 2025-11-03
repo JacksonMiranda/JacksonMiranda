@@ -42,7 +42,7 @@ Other tools: HTML, CSS, JavaScript, Bootstrap, C#, Lombok, Spring Security, Spr
 
 ## 📊 Estatísticas do GitHub / GitHub Stats
 
-![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=JacksonMiranda&show_icons=true&theme=radical)
+![Estatísticas do GitHub](https://github-readme-stats.vercel.app/api?username=JacksonMiranda&show_icons=true&theme=radical&cache_seconds=7200)
 
 ## 📫 Contato / Contact
 
