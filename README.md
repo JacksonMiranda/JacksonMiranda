@@ -293,4 +293,14 @@ Estas métricas refletem tanto repositórios públicos quanto privados (quando p
 
 **Especializado em integração de sistemas de saúde | Specialized in healthcare system integration**
 
+---
+
+### 🔄 Sistema de Melhorias Contínuas Ativo
+
+Este perfil utiliza automações GitHub Actions para manter informações sempre atualizadas.
+[📖 Saiba mais sobre as automações →](AUTOMATIONS.md)
+
+*This profile uses GitHub Actions automations to keep information always up-to-date.*
+*[📖 Learn more about automations →](AUTOMATIONS.md)*
+
 </div>
