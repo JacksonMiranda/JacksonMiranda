@@ -212,8 +212,8 @@ Project demonstrating technical versatility with focus on automation and modern 
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=JacksonMiranda&layout=compact&theme=radical&langs_count=10&hide_border=false">
-  <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JacksonMiranda&layout=compact&theme=default&langs_count=10&hide_border=false">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=JacksonMiranda&layout=compact&theme=radical&langs_count=10&hide_border=false&hide=c%23">
+  <img alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JacksonMiranda&layout=compact&theme=default&langs_count=10&hide_border=false&hide=c%23">
 </picture>
 
 <picture>
