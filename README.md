@@ -26,7 +26,7 @@ Currently pursuing two postgraduate degrees: **Software Engineering** (PUC Minas
 
 ## Featured Projects
 
-### [Obra Fácil](https://github.com/lexcesar/obra-facil) — Full-Stack Marketplace
+### [Obra Fácil](https://github.com/JacksonMiranda/obra-facil) — Full-Stack Marketplace
 > NestJS · Next.js 15 · React 19 · PostgreSQL · Supabase · Clerk Auth · Vercel
 
 Home renovation marketplace built as a postgrad capstone project at PUC Minas. I designed the UI flows and implemented both frontend and backend from scratch. Dockerized local dev, CI/CD with GitHub Actions.
